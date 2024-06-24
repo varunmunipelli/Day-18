@@ -45,7 +45,7 @@ Select dbo.CalculateAge(2000);
 ~~~
 
 ## - `Table Fnctions` :- it is again into two types
-## 1. Inline table valued Function ITVF
+## 1. Inline table valued Function (`ITVF`)
 ~~~SQL
 Go
 Create Function dbo.GetMovieByGenre(@Genre nvarchar(30))
@@ -58,8 +58,7 @@ Where Genre = @Genre
 Go
 ~~~
 
-## 2. Multiline table valued Function MTVF
-
+## 2. Multiline table valued Function (`MTVF`)
 ~~~SQL 
 Create Function dbo.GetMoviesAfter2015()
 Returns @LatestDecadeMovies Table(Title varchar(100), ReleaseYear Int, Genre varchar(20))
